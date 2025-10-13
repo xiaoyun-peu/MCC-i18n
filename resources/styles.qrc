@@ -1,0 +1,14 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/">
+        <file>icons/app.png</file>
+        <file>icons/logo.png</file>
+        <file>icons/world.png</file>
+        <file>icons/scan.png</file>
+        <file>icons/translate.png</file>
+        <file>icons/write.png</file>
+        <file>icons/export.png</file>
+        <file>styles/light_theme.qss</file>
+        <file>styles/dark_theme.qss</file>
+    </qresource>
+</RCC>
