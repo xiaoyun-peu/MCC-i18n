@@ -167,7 +167,7 @@ class MainWindow(QMainWindow):
         
         # 设置按钮：增加图标和样式调整
         self.settings_button = QPushButton()
-        settings_icon_path = os.path.join(os.path.dirname(__file__), '..', 'resources', 'icons', 'settings.png')
+        settings_icon_path = os.path.join(os.path.dirname(__file__), '..', 'resources', 'icons', 'gear.png')
         if os.path.exists(settings_icon_path):
             self.settings_button.setIcon(QIcon(settings_icon_path))
             self.settings_button.setIconSize(QSize(24, 24))

@@ -342,3 +342,30 @@
 2025-10-13 23:29:09,003 - mcc_i18n - INFO - apply_theme:355 - 主题已切换为: light_teal.xml
 2025-10-13 23:29:09,003 - mcc_i18n - INFO - on_settings_changed:464 - 设置已更新
 2025-10-13 23:29:48,654 - mcc_i18n - INFO - closeEvent:470 - 应用程序关闭
+2025-10-14 00:07:42,264 - mcc_i18n - INFO - setup_logger:102 - 日志系统初始化完成
+2025-10-14 00:07:42,264 - mcc_i18n - INFO - main:43 - 应用程序启动 - Application started
+2025-10-14 00:07:43,096 - mcc_i18n - INFO - apply_theme:354 - 主题已切换为: light_teal.xml
+2025-10-14 00:07:43,097 - mcc_i18n - INFO - __init__:59 - 主窗口初始化完成
+2025-10-14 00:07:51,234 - mcc_i18n - INFO - closeEvent:469 - 应用程序关闭
+2025-10-14 00:22:58,211 - mcc_i18n - INFO - setup_logger:102 - 日志系统初始化完成
+2025-10-14 00:22:58,211 - mcc_i18n - INFO - main:43 - 应用程序启动 - Application started
+2025-10-14 00:22:59,009 - mcc_i18n - INFO - apply_theme:354 - 主题已切换为: light_teal.xml
+2025-10-14 00:22:59,010 - mcc_i18n - INFO - __init__:59 - 主窗口初始化完成
+2025-10-14 00:23:05,708 - mcc_i18n - ERROR - show_settings:455 - 显示设置对话框失败: 'Config' object has no attribute 'icon'
+2025-10-14 00:23:11,725 - mcc_i18n - INFO - closeEvent:469 - 应用程序关闭
+2025-10-14 00:25:04,937 - mcc_i18n - INFO - setup_logger:102 - 日志系统初始化完成
+2025-10-14 00:25:04,938 - mcc_i18n - INFO - main:43 - 应用程序启动 - Application started
+2025-10-14 00:25:05,564 - mcc_i18n - INFO - apply_theme:354 - 主题已切换为: light_teal.xml
+2025-10-14 00:25:05,564 - mcc_i18n - INFO - __init__:59 - 主窗口初始化完成
+2025-10-14 00:25:07,308 - mcc_i18n - ERROR - show_settings:455 - 显示设置对话框失败: 'SettingsDialog' object has no attribute 'settings_icon_path'
+2025-10-14 00:25:15,728 - mcc_i18n - INFO - closeEvent:469 - 应用程序关闭
+2025-10-14 00:27:01,218 - mcc_i18n - INFO - setup_logger:102 - 日志系统初始化完成
+2025-10-14 00:27:01,219 - mcc_i18n - INFO - main:43 - 应用程序启动 - Application started
+2025-10-14 00:27:01,941 - mcc_i18n - INFO - apply_theme:354 - 主题已切换为: light_teal.xml
+2025-10-14 00:27:01,967 - mcc_i18n - INFO - __init__:59 - 主窗口初始化完成
+2025-10-14 00:27:11,372 - mcc_i18n - INFO - closeEvent:469 - 应用程序关闭
+2025-10-14 00:31:26,420 - mcc_i18n - INFO - setup_logger:102 - 日志系统初始化完成
+2025-10-14 00:31:26,420 - mcc_i18n - INFO - main:43 - 应用程序启动 - Application started
+2025-10-14 00:31:27,453 - mcc_i18n - INFO - apply_theme:354 - 主题已切换为: light_teal.xml
+2025-10-14 00:31:27,454 - mcc_i18n - INFO - __init__:59 - 主窗口初始化完成
+2025-10-14 00:31:48,995 - mcc_i18n - INFO - closeEvent:469 - 应用程序关闭

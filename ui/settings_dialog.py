@@ -10,7 +10,8 @@ from PyQt6.QtWidgets import (
     QDoubleSpinBox, QComboBox, QGroupBox, QMessageBox
 )
 from PyQt6.QtCore import pyqtSignal, Qt
-from PyQt6.QtGui import QFont
+from PyQt6.QtGui import QFont,QIcon
+import os
 
 from utils.config import Config
 from utils.logger import get_logger
@@ -31,6 +32,7 @@ class SettingsDialog(QDialog):
     def init_ui(self):
         """初始化UI"""
         self.setWindowTitle("设置")
+        self.setWindowIcon(QIcon(os.path.join(os.path.dirname(__file__), '..', 'resources', 'icons', 'gear.png')))
         self.setModal(True)
         self.resize(600, 500)
         
