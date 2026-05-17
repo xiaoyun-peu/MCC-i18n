@@ -93,11 +93,21 @@ class TranslationPage(QWidget):
         
         # 设置表格属性
         header = self.table.horizontalHeader()
-        header.setStretchLastSection(True)
-        header.setSectionResizeMode(0, QHeaderView.ResizeMode.Interactive)
-        header.setSectionResizeMode(1, QHeaderView.ResizeMode.Interactive)
+        header.setStretchLastSection(False)
+        header.setSectionResizeMode(0, QHeaderView.ResizeMode.Stretch)
+        header.setSectionResizeMode(1, QHeaderView.ResizeMode.Stretch)
         header.setSectionResizeMode(2, QHeaderView.ResizeMode.ResizeToContents)
         header.setSectionResizeMode(3, QHeaderView.ResizeMode.ResizeToContents)
+        
+        # 设置最小列宽
+        self.table.setColumnWidth(0, 300)
+        self.table.setColumnWidth(1, 300)
+        
+        # 设置表格外观
+        self.table.setAlternatingRowColors(True)
+        self.table.verticalHeader().setDefaultSectionSize(30)
+        self.table.setSelectionBehavior(QTableWidget.SelectionBehavior.SelectRows)
+        self.table.setSelectionMode(QTableWidget.SelectionMode.ExtendedSelection)
         
         self.table.setEditTriggers(QTableWidget.EditTrigger.DoubleClicked)
         self.table.cellChanged.connect(self.on_cell_changed)
@@ -158,10 +168,12 @@ class TranslationPage(QWidget):
                 border: 1px solid #e0e0e0;
                 border-radius: 4px;
                 background-color: white;
+                alternate-background-color: #f5f5f5;
             }
             #translation_table QHeaderView::section {
-                background-color: #f5f5f5;
-                border: 1px solid #e0e0e0;
+                background-color: #00897b;
+                color: white;
+                border: 1px solid #00695c;
                 padding: 8px;
                 font-weight: bold;
             }
@@ -170,7 +182,12 @@ class TranslationPage(QWidget):
                 border-bottom: 1px solid #e0e0e0;
             }
             #translation_table::item:selected {
-                background-color: #e8f5e8;
+                background-color: #00897b;
+                color: white;
+            }
+            #translation_table::item:selected:focus {
+                background-color: #00695c;
+                color: white;
             }
             #status_label {
                 color: #757575;

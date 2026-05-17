@@ -149,6 +149,12 @@ class ScanPage(QWidget):
         self.scan_button.clicked.connect(self.start_scan)
         button_layout.addWidget(self.scan_button)
         
+        self.stop_button = QPushButton("停止")
+        self.stop_button.setObjectName("stop_button")
+        self.stop_button.setEnabled(False)
+        self.stop_button.clicked.connect(self.stop_scan)
+        button_layout.addWidget(self.stop_button)
+        
         self.next_button = QPushButton("下一步")
         self.next_button.setObjectName("next_button")
         self.next_button.setEnabled(False)
@@ -216,12 +222,25 @@ class ScanPage(QWidget):
                 font-weight: bold;
                 margin: 0 5px;
             }
-            #scan_button:hover, #next_button:hover {
+            #scan_button:hover, #next_button:hover, #stop_button:hover {
                 background-color: #00695c;
             }
-            #scan_button:disabled, #next_button:disabled {
+            #scan_button:disabled, #next_button:disabled, #stop_button:disabled {
                 background-color: #bdbdbd;
                 color: #757575;
+            }
+            #stop_button {
+                background-color: #f44336;
+                color: white;
+                border: none;
+                border-radius: 6px;
+                padding: 12px 30px;
+                font-size: 16px;
+                font-weight: bold;
+                margin: 0 5px;
+            }
+            #stop_button:hover {
+                background-color: #d32f2f;
             }
         """)
     
@@ -263,6 +282,7 @@ class ScanPage(QWidget):
         # 显示进度界面
         self.progress_frame.setVisible(True)
         self.scan_button.setEnabled(False)
+        self.stop_button.setEnabled(True)
         
         # 创建扫描工作线程
         self.scan_worker = ScanWorker(
@@ -312,8 +332,9 @@ class ScanPage(QWidget):
         
         self.result_summary.setPlainText(summary)
         
-        # 启用下一步按钮
+        # 启用下一步按钮，禁用停止按钮
         self.next_button.setEnabled(True)
+        self.stop_button.setEnabled(False)
         self.scan_button.setText("重新扫描")
         self.scan_button.setEnabled(True)
         
@@ -324,9 +345,18 @@ class ScanPage(QWidget):
         """扫描错误处理"""
         self.progress_frame.setVisible(False)
         self.scan_button.setEnabled(True)
+        self.stop_button.setEnabled(False)
         
         QMessageBox.critical(self, "扫描错误", f"扫描过程中发生错误:\n{error}")
         self.logger.error(f"扫描错误: {error}")
+    
+    def stop_scan(self):
+        """停止扫描"""
+        if self.scan_worker and self.scan_worker.isRunning():
+            self.scan_worker.stop()
+            self.logger.info("正在停止扫描...")
+            self.stop_button.setEnabled(False)
+            self.stop_button.setText("停止中...")
     
     def proceed_to_translation(self):
         self.proceed_to_translation_signal.emit()

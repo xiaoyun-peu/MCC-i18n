@@ -369,3 +369,92 @@
 2025-10-14 00:31:27,453 - mcc_i18n - INFO - apply_theme:354 - 主题已切换为: light_teal.xml
 2025-10-14 00:31:27,454 - mcc_i18n - INFO - __init__:59 - 主窗口初始化完成
 2025-10-14 00:31:48,995 - mcc_i18n - INFO - closeEvent:469 - 应用程序关闭
+2026-05-17 22:03:11,026 - mcc_i18n - INFO - setup_logger:102 - 日志系统初始化完成
+2026-05-17 22:03:11,026 - mcc_i18n - INFO - main:43 - 应用程序启动 - Application started
+2026-05-17 22:03:12,041 - mcc_i18n - INFO - apply_theme:354 - 主题已切换为: light_teal.xml
+2026-05-17 22:03:12,042 - mcc_i18n - INFO - __init__:59 - 主窗口初始化完成
+2026-05-17 22:03:17,180 - mcc_i18n - INFO - apply_theme:354 - 主题已切换为: dark_teal.xml
+2026-05-17 22:03:17,945 - mcc_i18n - INFO - apply_theme:354 - 主题已切换为: light_teal.xml
+2026-05-17 22:03:18,502 - mcc_i18n - INFO - apply_theme:354 - 主题已切换为: dark_teal.xml
+2026-05-17 22:03:19,701 - mcc_i18n - INFO - closeEvent:469 - 应用程序关闭
+2026-05-17 22:12:25,472 - mcc_i18n - INFO - setup_logger:102 - 日志系统初始化完成
+2026-05-17 22:12:25,472 - mcc_i18n - INFO - main:43 - 应用程序启动 - Application started
+2026-05-17 22:12:26,399 - mcc_i18n - INFO - apply_theme:354 - 主题已切换为: light_teal.xml
+2026-05-17 22:12:26,399 - mcc_i18n - INFO - __init__:59 - 主窗口初始化完成
+2026-05-17 22:13:49,188 - mcc_i18n - INFO - save_settings:528 - 设置已保存
+2026-05-17 22:13:49,327 - mcc_i18n - INFO - apply_theme:354 - 主题已切换为: light_teal.xml
+2026-05-17 22:13:49,328 - mcc_i18n - INFO - on_settings_changed:463 - 设置已更新
+2026-05-17 22:13:54,360 - mcc_i18n - INFO - save_settings:528 - 设置已保存
+2026-05-17 22:13:54,482 - mcc_i18n - INFO - apply_theme:354 - 主题已切换为: light_teal.xml
+2026-05-17 22:13:54,483 - mcc_i18n - INFO - on_settings_changed:463 - 设置已更新
+2026-05-17 22:13:59,742 - mcc_i18n - INFO - save_settings:528 - 设置已保存
+2026-05-17 22:13:59,871 - mcc_i18n - INFO - apply_theme:354 - 主题已切换为: light_teal.xml
+2026-05-17 22:13:59,872 - mcc_i18n - INFO - on_settings_changed:463 - 设置已更新
+2026-05-17 22:14:09,623 - mcc_i18n - INFO - apply_settings:548 - 设置已应用
+2026-05-17 22:14:09,756 - mcc_i18n - INFO - apply_theme:354 - 主题已切换为: light_teal.xml
+2026-05-17 22:14:09,756 - mcc_i18n - INFO - on_settings_changed:463 - 设置已更新
+2026-05-17 22:14:11,894 - mcc_i18n - INFO - save_settings:528 - 设置已保存
+2026-05-17 22:14:12,015 - mcc_i18n - INFO - apply_theme:354 - 主题已切换为: light_teal.xml
+2026-05-17 22:14:12,016 - mcc_i18n - INFO - on_settings_changed:463 - 设置已更新
+2026-05-17 22:14:17,566 - mcc_i18n - INFO - apply_theme:354 - 主题已切换为: dark_teal.xml
+2026-05-17 22:14:19,596 - mcc_i18n - INFO - apply_theme:354 - 主题已切换为: light_teal.xml
+2026-05-17 22:14:22,409 - mcc_i18n - INFO - closeEvent:469 - 应用程序关闭
+2026-05-17 22:14:45,473 - mcc_i18n - INFO - setup_logger:102 - 日志系统初始化完成
+2026-05-17 22:14:45,474 - mcc_i18n - INFO - main:43 - 应用程序启动 - Application started
+2026-05-17 22:14:46,277 - mcc_i18n - INFO - apply_theme:354 - 主题已切换为: light_teal.xml
+2026-05-17 22:14:46,278 - mcc_i18n - INFO - __init__:59 - 主窗口初始化完成
+2026-05-17 22:15:24,134 - mcc_i18n - INFO - on_world_selected:386 - 已选择世界: D:/xiaoyun/Project/Gravity 1.1.3/Gravity
+2026-05-17 22:15:24,137 - mcc_i18n - INFO - set_world_path:249 - 设置扫描世界路径: D:/xiaoyun/Project/Gravity 1.1.3/Gravity
+2026-05-17 22:15:24,138 - mcc_i18n - INFO - proceed_to_scan:273 - 选择世界完成: D:/xiaoyun/Project/Gravity 1.1.3/Gravity
+2026-05-17 22:15:27,027 - mcc_i18n - INFO - on_scan_started:395 - 开始扫描文本...
+2026-05-17 22:15:27,027 - mcc_i18n - INFO - start_scan:284 - 开始扫描世界文本
+2026-05-17 22:15:27,028 - mcc_i18n - INFO - run:63 - 开始扫描，总计 16 个文件
+2026-05-17 22:15:27,086 - mcc_i18n - INFO - run:80 - 扫描完成，找到 15 条文本
+2026-05-17 22:15:27,090 - mcc_i18n - INFO - on_scan_finished:320 - 扫描完成，找到 15 条文本，其中 5 条唯一
+2026-05-17 22:15:27,090 - mcc_i18n - INFO - on_scan_finished:399 - 扫描完成，找到 15 条文本
+2026-05-17 22:15:27,091 - mcc_i18n - INFO - load_scan_results:216 - 加载了 5 条待翻译文本
+2026-05-17 22:15:30,830 - mcc_i18n - INFO - on_scan_started:395 - 开始扫描文本...
+2026-05-17 22:15:30,831 - mcc_i18n - INFO - start_scan:284 - 开始扫描世界文本
+2026-05-17 22:15:30,833 - mcc_i18n - INFO - run:63 - 开始扫描，总计 16 个文件
+2026-05-17 22:15:30,887 - mcc_i18n - INFO - run:80 - 扫描完成，找到 34 条文本
+2026-05-17 22:15:30,890 - mcc_i18n - INFO - on_scan_finished:320 - 扫描完成，找到 34 条文本，其中 17 条唯一
+2026-05-17 22:15:30,890 - mcc_i18n - INFO - on_scan_finished:399 - 扫描完成，找到 34 条文本
+2026-05-17 22:15:30,891 - mcc_i18n - INFO - load_scan_results:216 - 加载了 17 条待翻译文本
+2026-05-17 22:15:55,467 - mcc_i18n - INFO - closeEvent:469 - 应用程序关闭
+2026-05-17 22:19:06,338 - mcc_i18n - INFO - setup_logger:102 - 日志系统初始化完成
+2026-05-17 22:19:06,339 - mcc_i18n - INFO - main:43 - 应用程序启动 - Application started
+2026-05-17 22:19:07,188 - mcc_i18n - INFO - apply_theme:354 - 主题已切换为: light_teal.xml
+2026-05-17 22:19:07,189 - mcc_i18n - INFO - __init__:59 - 主窗口初始化完成
+2026-05-17 22:19:26,736 - mcc_i18n - INFO - on_world_selected:386 - 已选择世界: D:/xiaoyun/Project/Gravity 1.1.3/Gravity
+2026-05-17 22:19:26,739 - mcc_i18n - INFO - set_world_path:249 - 设置扫描世界路径: D:/xiaoyun/Project/Gravity 1.1.3/Gravity
+2026-05-17 22:19:26,739 - mcc_i18n - INFO - proceed_to_scan:273 - 选择世界完成: D:/xiaoyun/Project/Gravity 1.1.3/Gravity
+2026-05-17 22:19:29,957 - mcc_i18n - INFO - on_scan_started:395 - 开始扫描文本...
+2026-05-17 22:19:29,957 - mcc_i18n - INFO - start_scan:284 - 开始扫描世界文本
+2026-05-17 22:19:29,958 - mcc_i18n - INFO - run:63 - 开始扫描，总计 16 个文件
+2026-05-17 22:19:30,006 - mcc_i18n - INFO - run:80 - 扫描完成，找到 34 条文本
+2026-05-17 22:19:30,007 - mcc_i18n - INFO - on_scan_finished:320 - 扫描完成，找到 34 条文本，其中 17 条唯一
+2026-05-17 22:19:30,007 - mcc_i18n - INFO - on_scan_finished:399 - 扫描完成，找到 34 条文本
+2026-05-17 22:19:30,008 - mcc_i18n - INFO - load_scan_results:216 - 加载了 17 条待翻译文本
+2026-05-17 22:19:59,218 - mcc_i18n - INFO - __init__:884 - 使用模拟翻译器
+2026-05-17 22:19:59,218 - mcc_i18n - WARNING - __init__:42 - Google翻译不可用，使用模拟翻译器
+2026-05-17 22:19:59,222 - mcc_i18n - INFO - auto_translate:332 - 开始自动翻译 17 条文本
+2026-05-17 22:19:59,222 - mcc_i18n - INFO - run:50 - 开始翻译 17 条文本
+2026-05-17 22:20:19,510 - mcc_i18n - INFO - run:84 - 翻译完成，成功翻译 17 条文本
+2026-05-17 22:20:19,515 - mcc_i18n - INFO - on_translation_finished:358 - 自动翻译完成，共翻译 17 条文本
+2026-05-17 22:20:19,515 - mcc_i18n - INFO - on_translation_requested:405 - 请求翻译 17 条文本
+2026-05-17 22:21:31,829 - mcc_i18n - INFO - closeEvent:469 - 应用程序关闭
+2026-05-17 22:27:24,811 - mcc_i18n - INFO - setup_logger:102 - 日志系统初始化完成
+2026-05-17 22:27:24,811 - mcc_i18n - INFO - main:43 - 应用程序启动 - Application started
+2026-05-17 22:27:25,768 - mcc_i18n - INFO - apply_theme:357 - 主题已切换为: light_teal.xml
+2026-05-17 22:27:25,768 - mcc_i18n - INFO - __init__:59 - 主窗口初始化完成
+2026-05-17 22:27:47,195 - mcc_i18n - INFO - on_world_selected:391 - 已选择世界: D:/xiaoyun/Project/Gravity 1.1.3/Gravity
+2026-05-17 22:27:47,198 - mcc_i18n - INFO - set_world_path:268 - 设置扫描世界路径: D:/xiaoyun/Project/Gravity 1.1.3/Gravity
+2026-05-17 22:27:47,198 - mcc_i18n - INFO - proceed_to_scan:273 - 选择世界完成: D:/xiaoyun/Project/Gravity 1.1.3/Gravity
+2026-05-17 22:27:49,062 - mcc_i18n - INFO - on_scan_started:400 - 开始扫描文本...
+2026-05-17 22:27:49,062 - mcc_i18n - INFO - start_scan:304 - 开始扫描世界文本
+2026-05-17 22:27:49,066 - mcc_i18n - INFO - run:63 - 开始扫描，总计 16 个文件
+2026-05-17 22:27:49,116 - mcc_i18n - INFO - run:80 - 扫描完成，找到 34 条文本
+2026-05-17 22:27:49,118 - mcc_i18n - INFO - on_scan_finished:341 - 扫描完成，找到 34 条文本，其中 17 条唯一
+2026-05-17 22:27:49,118 - mcc_i18n - INFO - on_scan_finished:404 - 扫描完成，找到 34 条文本
+2026-05-17 22:27:49,119 - mcc_i18n - INFO - load_scan_results:233 - 加载了 17 条待翻译文本
+2026-05-17 22:28:01,554 - mcc_i18n - INFO - closeEvent:508 - 应用程序关闭

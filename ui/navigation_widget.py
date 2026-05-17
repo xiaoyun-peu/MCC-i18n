@@ -62,7 +62,44 @@ class NavigationWidget(QWidget):
     
     def on_button_clicked(self, index: int):
         """按钮点击处理"""
-        self.page_changed.emit(index)  # 修复信号发出逻辑
+        self.set_current_page(index)
+        self.page_changed.emit(index)
+    
+    def set_current_page(self, index: int):
+        """设置当前页面（更新按钮样式）"""
+        for i, button in enumerate(self.buttons):
+            if i == index:
+                button.setStyleSheet("""
+                    QPushButton {
+                        background-color: #00897b;
+                        color: white;
+                        border: none;
+                        padding: 10px;
+                        font-size: 14px;
+                        border-radius: 5px;
+                        font-weight: bold;
+                    }
+                    QPushButton:hover {
+                        background-color: #00695c;
+                    }
+                """)
+            else:
+                button.setStyleSheet("""
+                    QPushButton {
+                        background-color: #f5f5f5;
+                        border: none;
+                        padding: 10px;
+                        font-size: 14px;
+                        border-radius: 5px;
+                    }
+                    QPushButton:hover {
+                        background-color: #e0e0e0;
+                    }
+                    QPushButton:disabled {
+                        background-color: #bdbdbd;
+                        color: #757575;
+                    }
+                """)
     
     def set_page_enabled(self, index: int, enabled: bool):
         """设置页面按钮是否可用"""

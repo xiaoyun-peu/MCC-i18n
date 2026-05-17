@@ -61,10 +61,13 @@ class MainWindow(QMainWindow):
     def init_ui(self):
         """初始化UI"""
         self.setWindowTitle("Minecraft地图汉化工具 v1.0.0")
-        self.setGeometry(100, 100, 1400, 900)
+        self.setMinimumSize(1000, 700)
         
-        # 创建无边框窗口
-        self.setWindowFlags(Qt.WindowType.FramelessWindowHint)
+        # 恢复窗口状态
+        self.restore_window_state()
+        
+        # 创建无边框窗口（保留大小调整功能）
+        self.setWindowFlags(Qt.WindowType.FramelessWindowHint | Qt.WindowType.WindowMinMaxButtonsHint)
         self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
         
         # 创建中心部件
@@ -79,6 +82,7 @@ class MainWindow(QMainWindow):
         
         # 创建导航栏
         self.navigation = NavigationWidget()
+        self.navigation.set_current_page(0)  # 设置默认选中第一个页面
         main_layout.addWidget(self.navigation)
         
         # 创建内容区域
@@ -249,7 +253,6 @@ class MainWindow(QMainWindow):
         self.log_text = QTextEdit()
         self.log_text.setObjectName("log_text")
         self.log_text.setReadOnly(True)
-        self.log_text.setMaximumHeight(200)
         log_layout.addWidget(self.log_text)
         
         # 日志控制按钮
@@ -306,8 +309,8 @@ class MainWindow(QMainWindow):
     
     def setup_connections(self):
         """设置信号连接"""
-        # 导航连接
-        self.navigation.page_changed.connect(self.stack_widget.setCurrentIndex)
+        # 导航连接 - 页面切换时更新导航按钮状态
+        self.navigation.page_changed.connect(self.on_page_changed)
         
         # ② → ③ 扫描完成后自动跳转
         self.scan_page.proceed_to_translation_signal.connect(
@@ -380,6 +383,8 @@ class MainWindow(QMainWindow):
         else:
             self.showMaximized()
             self.max_button.setText("🗗")
+        # 保存窗口状态
+        self.save_window_state()
     
     def on_world_selected(self, world_path: str):
         """世界选择完成处理"""
@@ -464,7 +469,41 @@ class MainWindow(QMainWindow):
         except Exception as e:
             self.logger.error(f"应用设置变更失败: {e}")
     
+    def on_page_changed(self, index: int):
+        """页面切换处理"""
+        self.stack_widget.setCurrentIndex(index)
+        self.navigation.set_current_page(index)
+    
+    def restore_window_state(self):
+        """恢复窗口状态"""
+        try:
+            window_config = self.config.get_window_config()
+            width = window_config.get('width', 1400)
+            height = window_config.get('height', 900)
+            maximized = window_config.get('maximized', False)
+            
+            self.resize(width, height)
+            self.move(100, 100)  # 默认位置
+            
+            if maximized:
+                self.showMaximized()
+                
+        except Exception as e:
+            self.logger.warning(f"恢复窗口状态失败: {e}")
+            self.resize(1400, 900)
+            self.move(100, 100)
+    
+    def save_window_state(self):
+        """保存窗口状态"""
+        try:
+            if not self.isMaximized():
+                self.config.set_window_size(self.width(), self.height())
+            self.config.set_window_maximized(self.isMaximized())
+        except Exception as e:
+            self.logger.warning(f"保存窗口状态失败: {e}")
+    
     def closeEvent(self, event):
         """关闭事件"""
+        self.save_window_state()
         self.logger.info("应用程序关闭")
         event.accept()

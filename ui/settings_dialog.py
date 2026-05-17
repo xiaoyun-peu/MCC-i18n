@@ -35,6 +35,7 @@ class SettingsDialog(QDialog):
         self.setWindowIcon(QIcon(os.path.join(os.path.dirname(__file__), '..', 'resources', 'icons', 'gear.png')))
         self.setModal(True)
         self.resize(600, 500)
+        self.setMinimumSize(500, 400)
         
         layout = QVBoxLayout(self)
         layout.setContentsMargins(20, 20, 20, 20)
